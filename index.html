@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGEND M ALI Usfull tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark-hacker">
+
+    <!-- Theme Controller Center -->
+    <div class="theme-switcher-panel">
+        <button class="theme-btn btn-dark" onclick="switchTheme('theme-dark-hacker')">Dark Hacker</button>
+        <button class="theme-btn btn-light" onclick="switchTheme('theme-light-tech')">Light Tech</button>
+        <button class="theme-btn btn-toxic" onclick="switchTheme('theme-toxic-red')">Toxic Red</button>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="nav-header">
+        <div class="main-title" onclick="triggerAdminCounter()">LEGEND M ALI Usfull tools</div>
+        <div class="menu-container">
+            <div class="three-dots" onclick="toggleDropdown()">⋮</div>
+            <div class="dropdown-menu" id="info-dropdown">
+                <h4>LEGEND M ALI INFO</h4>
+                <p><strong>Developer:</strong> Legend M Ali</p>
+                <p><strong>Special:</strong> Advanced Cyber Animations</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Core Workspace Container -->
+    <main class="main-workspace">
+        <div id="dynamic-announcement"></div>
+
+        <div id="setup-view">
+            <div class="input-wrapper">
+                <label for="wa-number">> INJECT TARGET WHATSAPP NUMBER (WITH COUNTRY CODE):</label>
+                <input type="text" id="wa-number" class="cyber-input" placeholder="+923039628506" autocomplete="off">
+            </div>
+            <button class="cyber-btn" onclick="executeCyberSequence()">Launch Exploit Engine</button>
+        </div>
+
+        <!-- Real Metrics / 2 Minutes Progress Bar -->
+        <div class="progress-box" id="p-box"><div class="progress-fill" id="p-fill"></div></div>
+        <div class="status-percentage" id="status-pct">0%</div>
+
+        <!-- Mega Terminal Shield -->
+        <div class="terminal-panel" id="terminal-panel">
+            <div class="terminal-header">
+                <div class="dot dot-red"></div><div class="dot dot-yellow"></div><div class="dot dot-green"></div>
+                <div class="terminal-title">legend_m_ali_exploit_module.sh</div>
+            </div>
+            <div id="log-stream"></div>
+        </div>
+
+        <!-- Success Block Trigger -->
+        <div class="success-banner" id="success-banner">
+            [+] CRITICAL SUCCESS: Target account network overloaded. Target number will be banned within 24 hours.
+        </div>
+    </main>
+
+    <!-- Admin Panel Hidden View -->
+    <section class="admin-modal" id="admin-panel">
+        <h2>[!!!] MASTER CONTROL CONSOLE</h2>
+        <div class="admin-grid">
+            <div>
+                <h4>1. Broadcast Global Alert</h4>
+                <input type="text" id="admin-desc" class="cyber-input" placeholder="Enter system notice...">
+                <button class="cyber-btn" onclick="saveGlobalNotice()">Save & Broadcast</button>
+            </div>
+            <div>
+                <h4>2. Deploy External Project Link</h4>
+                <input type="text" id="proj-title" class="cyber-input" placeholder="Project Title" style="margin-bottom:8px;">
+                <input type="text" id="proj-link" class="cyber-input" placeholder="Destination URL Link" style="margin-bottom:8px;">
+                <button class="cyber-btn" onclick="deployNewProject()">Publish Card</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Cards Mount Container -->
+    <section class="projects-section">
+        <h3>// HUB SYSTEM DEPLOYMENTS</h3>
+        <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <!-- WhatsApp Floating Action Button (Branded) -->
+    <a href="https://wa.me/923039628506" class="wa-floating-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" class="wa-icon"><path d="M16 2a13 13 0 0 0-11.3 19.4L3 29l7.8-2A13 13 0 1 0 16 2zm6.9 18.5c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-3.9-.8A14.6 14.6 0 0 1 11 17c-1.2-1.6-2-3.5-2-5.5 0-2 1-3 1.5-3.5.4-.4.8-.5 1-.5h.8c.2 0 .5 0 .7.6l1 2.5c.1.3.1.6-.1.8l-.6.7c-.2.2-.4.5-.2.9.4.8 1 1.5 1.7 2.1.9.8 1.7 1.3 2.4 1.6.4.2.7.1.9-.1l.7-.9c.3-.4.6-.3.9-.2l2.3 1.1c.3.2.5.3.6.4.1.3.1 1.2-.2 2.1z"/></svg>
+        <span>Message Owner</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
